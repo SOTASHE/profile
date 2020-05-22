@@ -1,0 +1,104 @@
+.header_color{
+  background: #56CCF2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  text-align: center;
+  position: sticky;
+  top:0;
+  width :auto;
+  border-radius: 15px;
+  border-style: hidden;
+  padding: 18px;
+  z-index: 1;
+}
+.landing_grid{
+  background: #6190E8;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  position: sticky;
+  top:0;
+  width :auto;
+  border-radius: 15px;
+  border-style: hidden;
+  padding: 18px;
+  z-index: 1;
+
+
+}
+.image{
+  height: 200px;
+  padding-top: 4em;
+     margin : auto;
+    
+     
+}
+
+  .banner_text {
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   opacity : .8;
+   width : 75%;
+   margin : auto;
+   border-radius : 10px;
+
+  }
+   .banner_text h1{
+     font-size: 66px;
+     font-weight: bold;
+     color :white;
+     width :50%;
+     text-align: center;
+     margin : auto;
+     text-transform: uppercase;
+     font-family: 'Roboto Condensed', sans-serif;
+
+   }
+   .banner_text hr{
+     border-top: 5px dotted whitesmoke;
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+    text-align: left;
+    width :50%;
+    margin : auto;
+   
+   }
+
+.name_text{
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+  text-align: left;
+  width :50%;
+  margin : auto;
+}
+.text{
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+}
+.link-text{
+  color :white;
+  font-size: 20px;
+  padding: 1em;
+
+}
+.links_to_socials{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+   
+
+
+}
+.links_to_socials i{    
+  color: whitesmoke; 
+  font-size: 4em;
+  padding: 9px;
+
+}
