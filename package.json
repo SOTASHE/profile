@@ -1,11 +1,11 @@
-{
+ {
+
   "name": "just-app",
   "version": "0.1.0",
   "private": true,
   "engines" :{
   "node":"13.13.0",
   "npm":"6.14.5"
-
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "node --version"
+  
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,8 +42,10 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "react-scripts": "^3.4.1"
+  },
   "author": "",
   "license": "ISC",
   "keywords": []
-}
+  }
