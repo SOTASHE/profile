@@ -1,35 +1,58 @@
 import React from 'react';
+import {Component} from "react";
+import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider';
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
+
 import './App.css';
-import {Content,Navigation,Header,Layout} from 'react-mdl';
-import  Main from './components/main';
-import {Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 
-function App() {
+//pages here
+import home from './pages/home';
+import login from './pages/login';
+import signup from './pages/signup';
+//components
+import Navbar from './components/Navbar';
+
+
+
+const theme = createMuiTheme({
+
+
+    palette: {
+      primary: {
+        main: '#e1bee7',
+      },
+      secondary: {
+        main: '#e53935',
+      },
+    },
+
+})
+
+class App extends Component{
+    render(){
   return (
-    <div className="demo-big-content">
-    <Layout>
-        <Header className="header_color" title="Profile" scroll>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to ="/aboutme">About me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/landingPage">Home</Link>
-                
-
-            </Navigation>
-            </Header> 
-            <br/>
-        <Content>
-            <div className="page_content" >
-            </div>
-            <Main/>
-        </Content>
-    </Layout>
+    <MuiThemeProvider theme={theme}>
+     <div className="App">
+       <Router>
+       <Navbar/>
+       <div className="container">
+         
+       
+             <Switch>
+                 <Route exact path="/" component = {home}/>
+                 <Route exact path="/login" component = {login}/>
+                 <Route exact path="/signup" component = {signup}/>
+             </Switch>
+       </div>
+            </Router>
 </div>
    
 
+    </MuiThemeProvider>
+   
   );
+}
 }
 
 export default App;
