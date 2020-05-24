@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Profile from './components/Profile';
+
 
  class home extends Component {
     render() {
@@ -8,11 +10,11 @@ import Grid from '@material-ui/core/Grid';
         
           <Grid container spacing={17}>
             <Grid item sm = {8} xs = {12}>
-            <p>profile...</p> 
+            <p>content</p> 
              </Grid>
             
             <Grid item sm = {4} xs = {12}>
-            <p>content...</p> 
+            <Profile/>
         </Grid>
         </Grid>
             
